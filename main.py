@@ -32,8 +32,9 @@ class Egydownloader:
         self.driver.find_element_by_id('main').click()
         
 
+    #index_to_terminate 0: for first, 1 for second
+    def terminate_popup(self, index_to_terminate):
 
-    def terminate_popup(self):
         for handle in self.driver.window_handles:
             self.driver.switch_to.window(handle)
 
@@ -42,7 +43,7 @@ class Egydownloader:
                 time.sleep(3)
                 self.driver.close()
 
-        self.driver.switch_to.window(self.driver.window_handles[0])
+        self.driver.switch_to.window(self.driver.window_handles[index_to_terminate])
         
     
     def display_info(self):
@@ -53,16 +54,32 @@ class Egydownloader:
         for i in range(0, len(info), 3):
             print(*info[i:i+3], sep=' | ')
 
-    def get_heighest(self):
+    def get_download_quality(self, index):
         #self.driver.get(self.init_url + self.sc.qualities_sizies[3])
-        self.wait.until(EC.presence_of_element_located((By.XPATH, '//*[@id="watch_dl"]/table/tbody/tr[1]/td[4]/a[1]' ))).click()
+        time.sleep(3)
+        self.wait.until(EC.visibility_of_element_located((By.XPATH, f'//*[@id="watch_dl"]/table/tbody/tr[{index}]/td[4]/a[1]' ))).click()
             
+
+    def check_for_popups(self):
+        #it clicks somewhere, where it doesn't redirect
+        #if another tab is opened -> there is a popup, close it else after 2 seconds continue
+
+        try:
+            self.bypass_egybest_popup()
+
+            if len(self.driver.window_handles) > 2:
+                #there is a popup
+                print(f"a pop up is there : {len(self.driver.window_handles)} opened tabs")
+                self.terminate_popup(1)
+        except :
+            print("nothing")
+            self.get_download_quality(1)
 
 
 down = Egydownloader('https://beta.egybest.direct/movie/tenet-2020/')
 down.get_link()
 down.bypass_egybest_popup()
-down.terminate_popup()
-down.get_heighest()
+down.get_download_quality(1)
+down.check_for_popups()
 
 
