@@ -1,0 +1,606 @@
+1610634790853	geckodriver	INFO	Listening on 127.0.0.1:44351
+1610634790862	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilebMQLU4"
+
+(firefox:97715): Gtk-WARNING **: 16:33:10.942: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:98004): Gtk-WARNING **: 16:33:12.419: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:98029): Gtk-WARNING **: 16:33:12.675: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:98119): Gtk-WARNING **: 16:33:14.451: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+1610634794647	Marionette	INFO	Listening on port 39767
+1610634794717	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.warn: "Async method failed in safeAsyncMethod" (new Error("Connection closed, pending request to server0.conn0.child3/customhighlighter73, type show failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:288:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:46:19\nshow@resource://devtools/client/fronts/highlighters.js:27:18\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\nshowHighlighterTypeForNode@resource://devtools/client/inspector/shared/highlighters-overlay.js:392:23\n", "resource://devtools/shared/protocol/Front.js", 99))
+console.warn: "Async method failed in safeAsyncMethod" (new Error("Connection closed, pending request to server0.conn0.child3/customhighlighter73, type hide failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:288:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:46:19\nhide@resource://devtools/client/fronts/highlighters.js:32:18\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\nhideHighlighterType@resource://devtools/client/inspector/shared/highlighters-overlay.js:443:23\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\n_beforeShowHighlighterTypeForNode@resource://devtools/client/inspector/shared/highlighters-overlay.js:261:22\nshowHighlighterTypeForNode@resource://devtools/client/inspector/shared/highlighters-overlay.js:372:33\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\n_showBoxModel@resource://devtools/client/inspector/markup/markup.js:705:40\n_onMouseMove@resource://devtools/client/inspector/markup/markup.js:484:12\n", "resource://devtools/shared/protocol/Front.js", 99))
+console.warn: "Async method failed in safeAsyncMethod" (new Error("Connection closed, pending request to server0.conn0.child3/customhighlighter73, type show failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:288:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:46:19\nshow@resource://devtools/client/fronts/highlighters.js:27:18\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\nshowHighlighterTypeForNode@resource://devtools/client/inspector/shared/highlighters-overlay.js:392:23\n", "resource://devtools/shared/protocol/Front.js", 99))
+console.warn: "Async method failed in safeAsyncMethod" (new Error("Connection closed, pending request to server0.conn0.child3/customhighlighter73, type hide failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:288:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:46:19\nhide@resource://devtools/client/fronts/highlighters.js:32:18\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\nhideHighlighterType@resource://devtools/client/inspector/shared/highlighters-overlay.js:443:23\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\n_beforeShowHighlighterTypeForNode@resource://devtools/client/inspector/shared/highlighters-overlay.js:261:22\nshowHighlighterTypeForNode@resource://devtools/client/inspector/shared/highlighters-overlay.js:372:33\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\n_showBoxModel@resource://devtools/client/inspector/markup/markup.js:705:40\n_onMouseMove@resource://devtools/client/inspector/markup/markup.js:484:12\n", "resource://devtools/shared/protocol/Front.js", 99))
+console.warn: "Async method failed in safeAsyncMethod" (new Error("Connection closed, pending request to server0.conn0.child3/customhighlighter73, type show failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:288:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:46:19\nshow@resource://devtools/client/fronts/highlighters.js:27:18\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\nshowHighlighterTypeForNode@resource://devtools/client/inspector/shared/highlighters-overlay.js:392:23\n", "resource://devtools/shared/protocol/Front.js", 99))
+console.warn: "Async method failed in safeAsyncMethod" (new Error("Connection closed, pending request to server0.conn0.child3/customhighlighter73, type hide failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:288:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:46:19\nhide@resource://devtools/client/fronts/highlighters.js:32:18\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\nhideHighlighterType@resource://devtools/client/inspector/shared/highlighters-overlay.js:443:23\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\n_beforeShowHighlighterTypeForNode@resource://devtools/client/inspector/shared/highlighters-overlay.js:261:22\nshowHighlighterTypeForNode@resource://devtools/client/inspector/shared/highlighters-overlay.js:372:33\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\n_showBoxModel@resource://devtools/client/inspector/markup/markup.js:705:40\n_onMouseMove@resource://devtools/client/inspector/markup/markup.js:484:12\n", "resource://devtools/shared/protocol/Front.js", 99))
+console.warn: "Async method failed in safeAsyncMethod" (new Error("Connection closed, pending request to server0.conn0.child3/customhighlighter73, type show failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:288:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:46:19\nshow@resource://devtools/client/fronts/highlighters.js:27:18\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\nshowHighlighterTypeForNode@resource://devtools/client/inspector/shared/highlighters-overlay.js:392:23\n", "resource://devtools/shared/protocol/Front.js", 99))
+console.warn: "Async method failed in safeAsyncMethod" (new Error("Connection closed, pending request to server0.conn0.child3/customhighlighter73, type hide failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:288:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:46:19\nhide@resource://devtools/client/fronts/highlighters.js:32:18\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\nhideHighlighterType@resource://devtools/client/inspector/shared/highlighters-overlay.js:443:23\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\n_beforeShowHighlighterTypeForNode@resource://devtools/client/inspector/shared/highlighters-overlay.js:261:22\nshowHighlighterTypeForNode@resource://devtools/client/inspector/shared/highlighters-overlay.js:372:33\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\n_showBoxModel@resource://devtools/client/inspector/markup/markup.js:705:40\n_onMouseMove@resource://devtools/client/inspector/markup/markup.js:484:12\n", "resource://devtools/shared/protocol/Front.js", 99))
+console.warn: "Async method failed in safeAsyncMethod" (new Error("Connection closed, pending request to server0.conn0.child3/customhighlighter73, type show failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:288:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:46:19\nshow@resource://devtools/client/fronts/highlighters.js:27:18\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\nshowHighlighterTypeForNode@resource://devtools/client/inspector/shared/highlighters-overlay.js:392:23\n", "resource://devtools/shared/protocol/Front.js", 99))
+console.warn: "Async method failed in safeAsyncMethod" (new Error("Connection closed, pending request to server0.conn0.child3/customhighlighter73, type hide failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:288:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:46:19\nhide@resource://devtools/client/fronts/highlighters.js:32:18\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\nhideHighlighterType@resource://devtools/client/inspector/shared/highlighters-overlay.js:443:23\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\n_beforeShowHighlighterTypeForNode@resource://devtools/client/inspector/shared/highlighters-overlay.js:261:22\nshowHighlighterTypeForNode@resource://devtools/client/inspector/shared/highlighters-overlay.js:372:33\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\n_showBoxModel@resource://devtools/client/inspector/markup/markup.js:705:40\n_onMouseMove@resource://devtools/client/inspector/markup/markup.js:484:12\n", "resource://devtools/shared/protocol/Front.js", 99))
+console.warn: "Async method failed in safeAsyncMethod" (new Error("Connection closed, pending request to server0.conn0.child3/customhighlighter73, type show failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:288:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:46:19\nshow@resource://devtools/client/fronts/highlighters.js:27:18\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\nshowHighlighterTypeForNode@resource://devtools/client/inspector/shared/highlighters-overlay.js:392:23\n", "resource://devtools/shared/protocol/Front.js", 99))
+console.warn: "Async method failed in safeAsyncMethod" (new Error("Connection closed, pending request to server0.conn0.child3/customhighlighter73, type hide failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:288:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:46:19\nhide@resource://devtools/client/fronts/highlighters.js:32:18\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\nhideHighlighterType@resource://devtools/client/inspector/shared/highlighters-overlay.js:443:23\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\n_beforeShowHighlighterTypeForNode@resource://devtools/client/inspector/shared/highlighters-overlay.js:261:22\nshowHighlighterTypeForNode@resource://devtools/client/inspector/shared/highlighters-overlay.js:372:33\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\n_showBoxModel@resource://devtools/client/inspector/markup/markup.js:705:40\n_onMouseMove@resource://devtools/client/inspector/markup/markup.js:484:12\n", "resource://devtools/shared/protocol/Front.js", 99))
+console.warn: "Async method failed in safeAsyncMethod" (new Error("Connection closed, pending request to server0.conn0.child3/customhighlighter73, type show failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:288:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:46:19\nshow@resource://devtools/client/fronts/highlighters.js:27:18\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\nshowHighlighterTypeForNode@resource://devtools/client/inspector/shared/highlighters-overlay.js:392:23\n", "resource://devtools/shared/protocol/Front.js", 99))
+console.warn: "Async method failed in safeAsyncMethod" (new Error("Connection closed, pending request to server0.conn0.child3/customhighlighter73, type show failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:288:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:46:19\nshow@resource://devtools/client/fronts/highlighters.js:27:18\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\nshowHighlighterTypeForNode@resource://devtools/client/inspector/shared/highlighters-overlay.js:392:23\n", "resource://devtools/shared/protocol/Front.js", 99))
+console.warn: "Async method failed in safeAsyncMethod" (new Error("Connection closed, pending request to server0.conn0.child3/customhighlighter73, type show failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:288:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:46:19\nshow@resource://devtools/client/fronts/highlighters.js:27:18\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\nshowHighlighterTypeForNode@resource://devtools/client/inspector/shared/highlighters-overlay.js:392:23\n", "resource://devtools/shared/protocol/Front.js", 99))
+console.warn: "Async method failed in safeAsyncMethod" (new Error("Connection closed, pending request to server0.conn0.child3/customhighlighter73, type hide failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:288:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:46:19\nhide@resource://devtools/client/fronts/highlighters.js:32:18\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\nhideHighlighterType@resource://devtools/client/inspector/shared/highlighters-overlay.js:443:23\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\n_hideBoxModel@resource://devtools/client/inspector/markup/markup.js:718:40\n_onMouseOut@resource://devtools/client/inspector/markup/markup.js:686:16\n", "resource://devtools/shared/protocol/Front.js", 99))
+console.warn: "Async method failed in safeAsyncMethod" (new Error("Connection closed, pending request to server0.conn0.child3/customhighlighter73, type show failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:288:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:46:19\nshow@resource://devtools/client/fronts/highlighters.js:27:18\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\nshowHighlighterTypeForNode@resource://devtools/client/inspector/shared/highlighters-overlay.js:392:23\n", "resource://devtools/shared/protocol/Front.js", 99))
+console.warn: "Async method failed in safeAsyncMethod" (new Error("Connection closed, pending request to server0.conn0.child3/customhighlighter73, type hide failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:288:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:46:19\nhide@resource://devtools/client/fronts/highlighters.js:32:18\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\nhideHighlighterType@resource://devtools/client/inspector/shared/highlighters-overlay.js:443:23\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\n_beforeShowHighlighterTypeForNode@resource://devtools/client/inspector/shared/highlighters-overlay.js:261:22\nshowHighlighterTypeForNode@resource://devtools/client/inspector/shared/highlighters-overlay.js:372:33\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\n_showBoxModel@resource://devtools/client/inspector/markup/markup.js:705:40\n_onMouseMove@resource://devtools/client/inspector/markup/markup.js:484:12\n", "resource://devtools/shared/protocol/Front.js", 99))
+console.warn: "Async method failed in safeAsyncMethod" (new Error("Connection closed, pending request to server0.conn0.child3/customhighlighter73, type show failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:288:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:46:19\nshow@resource://devtools/client/fronts/highlighters.js:27:18\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\nshowHighlighterTypeForNode@resource://devtools/client/inspector/shared/highlighters-overlay.js:392:23\n", "resource://devtools/shared/protocol/Front.js", 99))
+console.warn: "Async method failed in safeAsyncMethod" (new Error("Connection closed, pending request to server0.conn0.child3/customhighlighter73, type hide failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:288:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:46:19\nhide@resource://devtools/client/fronts/highlighters.js:32:18\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\nhideHighlighterType@resource://devtools/client/inspector/shared/highlighters-overlay.js:443:23\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\n_hideBoxModel@resource://devtools/client/inspector/markup/markup.js:718:40\n_onMouseOut@resource://devtools/client/inspector/markup/markup.js:686:16\n", "resource://devtools/shared/protocol/Front.js", 99))
+console.warn: "Async method failed in safeAsyncMethod" (new Error("Connection closed, pending request to server0.conn0.child3/customhighlighter73, type show failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:288:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:46:19\nshow@resource://devtools/client/fronts/highlighters.js:27:18\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\nshowHighlighterTypeForNode@resource://devtools/client/inspector/shared/highlighters-overlay.js:392:23\n", "resource://devtools/shared/protocol/Front.js", 99))
+console.warn: "Async method failed in safeAsyncMethod" (new Error("Connection closed, pending request to server0.conn0.child3/customhighlighter73, type hide failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:288:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:46:19\nhide@resource://devtools/client/fronts/highlighters.js:32:18\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\nhideHighlighterType@resource://devtools/client/inspector/shared/highlighters-overlay.js:443:23\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\n_beforeShowHighlighterTypeForNode@resource://devtools/client/inspector/shared/highlighters-overlay.js:261:22\nshowHighlighterTypeForNode@resource://devtools/client/inspector/shared/highlighters-overlay.js:372:33\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\n_showBoxModel@resource://devtools/client/inspector/markup/markup.js:705:40\n_onMouseMove@resource://devtools/client/inspector/markup/markup.js:484:12\n", "resource://devtools/shared/protocol/Front.js", 99))
+console.warn: "Async method failed in safeAsyncMethod" (new Error("Connection closed, pending request to server0.conn0.child3/customhighlighter73, type show failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:288:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:46:19\nshow@resource://devtools/client/fronts/highlighters.js:27:18\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\nshowHighlighterTypeForNode@resource://devtools/client/inspector/shared/highlighters-overlay.js:392:23\n", "resource://devtools/shared/protocol/Front.js", 99))
+console.warn: "Async method failed in safeAsyncMethod" (new Error("Connection closed, pending request to server0.conn0.child3/customhighlighter73, type show failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:288:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:46:19\nshow@resource://devtools/client/fronts/highlighters.js:27:18\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\nshowHighlighterTypeForNode@resource://devtools/client/inspector/shared/highlighters-overlay.js:392:23\n", "resource://devtools/shared/protocol/Front.js", 99))
+console.warn: "Async method failed in safeAsyncMethod" (new Error("Connection closed, pending request to server0.conn0.child3/customhighlighter73, type hide failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:288:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:46:19\nhide@resource://devtools/client/fronts/highlighters.js:32:18\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\nhideHighlighterType@resource://devtools/client/inspector/shared/highlighters-overlay.js:443:23\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\n_beforeShowHighlighterTypeForNode@resource://devtools/client/inspector/shared/highlighters-overlay.js:261:22\nshowHighlighterTypeForNode@resource://devtools/client/inspector/shared/highlighters-overlay.js:372:33\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\n_showBoxModel@resource://devtools/client/inspector/markup/markup.js:705:40\n_onMouseMove@resource://devtools/client/inspector/markup/markup.js:484:12\n", "resource://devtools/shared/protocol/Front.js", 99))
+console.warn: "Async method failed in safeAsyncMethod" (new Error("Connection closed, pending request to server0.conn0.child3/customhighlighter73, type show failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:288:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:46:19\nshow@resource://devtools/client/fronts/highlighters.js:27:18\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\nshowHighlighterTypeForNode@resource://devtools/client/inspector/shared/highlighters-overlay.js:392:23\n", "resource://devtools/shared/protocol/Front.js", 99))
+console.warn: "Async method failed in safeAsyncMethod" (new Error("Connection closed, pending request to server0.conn0.child3/customhighlighter73, type hide failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:288:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:46:19\nhide@resource://devtools/client/fronts/highlighters.js:32:18\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\nhideHighlighterType@resource://devtools/client/inspector/shared/highlighters-overlay.js:443:23\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\n_beforeShowHighlighterTypeForNode@resource://devtools/client/inspector/shared/highlighters-overlay.js:261:22\nshowHighlighterTypeForNode@resource://devtools/client/inspector/shared/highlighters-overlay.js:372:33\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\n_showBoxModel@resource://devtools/client/inspector/markup/markup.js:705:40\n_onMouseMove@resource://devtools/client/inspector/markup/markup.js:484:12\n", "resource://devtools/shared/protocol/Front.js", 99))
+console.warn: "Async method failed in safeAsyncMethod" (new Error("Connection closed, pending request to server0.conn0.child3/customhighlighter73, type show failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:288:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:46:19\nshow@resource://devtools/client/fronts/highlighters.js:27:18\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\nshowHighlighterTypeForNode@resource://devtools/client/inspector/shared/highlighters-overlay.js:392:23\n", "resource://devtools/shared/protocol/Front.js", 99))
+console.warn: "Async method failed in safeAsyncMethod" (new Error("Connection closed, pending request to server0.conn0.child3/customhighlighter73, type hide failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:288:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:46:19\nhide@resource://devtools/client/fronts/highlighters.js:32:18\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\nhideHighlighterType@resource://devtools/client/inspector/shared/highlighters-overlay.js:443:23\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\n_beforeShowHighlighterTypeForNode@resource://devtools/client/inspector/shared/highlighters-overlay.js:261:22\nshowHighlighterTypeForNode@resource://devtools/client/inspector/shared/highlighters-overlay.js:372:33\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\n_showBoxModel@resource://devtools/client/inspector/markup/markup.js:705:40\n_onMouseMove@resource://devtools/client/inspector/markup/markup.js:484:12\n", "resource://devtools/shared/protocol/Front.js", 99))
+console.warn: "Async method failed in safeAsyncMethod" (new Error("Connection closed, pending request to server0.conn0.child3/customhighlighter73, type show failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:288:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:46:19\nshow@resource://devtools/client/fronts/highlighters.js:27:18\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\nshowHighlighterTypeForNode@resource://devtools/client/inspector/shared/highlighters-overlay.js:392:23\n", "resource://devtools/shared/protocol/Front.js", 99))
+console.warn: "Async method failed in safeAsyncMethod" (new Error("Connection closed, pending request to server0.conn0.child3/customhighlighter73, type hide failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:288:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:46:19\nhide@resource://devtools/client/fronts/highlighters.js:32:18\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\nhideHighlighterType@resource://devtools/client/inspector/shared/highlighters-overlay.js:443:23\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\n_beforeShowHighlighterTypeForNode@resource://devtools/client/inspector/shared/highlighters-overlay.js:261:22\nshowHighlighterTypeForNode@resource://devtools/client/inspector/shared/highlighters-overlay.js:372:33\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\n_showBoxModel@resource://devtools/client/inspector/markup/markup.js:705:40\n_onMouseMove@resource://devtools/client/inspector/markup/markup.js:484:12\n", "resource://devtools/shared/protocol/Front.js", 99))
+console.warn: "Async method failed in safeAsyncMethod" (new Error("Connection closed, pending request to server0.conn0.child3/customhighlighter73, type show failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:288:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:46:19\nshow@resource://devtools/client/fronts/highlighters.js:27:18\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\nshowHighlighterTypeForNode@resource://devtools/client/inspector/shared/highlighters-overlay.js:392:23\n", "resource://devtools/shared/protocol/Front.js", 99))
+console.warn: "Async method failed in safeAsyncMethod" (new Error("Connection closed, pending request to server0.conn0.child3/customhighlighter73, type hide failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:288:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:46:19\nhide@resource://devtools/client/fronts/highlighters.js:32:18\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\nhideHighlighterType@resource://devtools/client/inspector/shared/highlighters-overlay.js:443:23\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:57:25\ngetHighlighter/<.unhighlight<@resource://devtools/client/framework/toolbox.js:3482:39\n_createXulPanelWrapper@resource://devtools/client/shared/widgets/tooltip/HTMLTooltip.js:994:28\nHTMLTooltip@resource://devtools/client/shared/widgets/tooltip/HTMLTooltip.js:400:33\ninitializeTooltip@resource://devtools/client/shared/components/menu/MenuButton.js:175:20\nMenuButton@resource://devtools/client/shared/components/menu/MenuButton.js:115:10\nconstructClassInstance@resource://devtools/client/shared/vendor/react-dom.js:8270:18\nupdateClassComponent@resource://devtools/client/shared/vendor/react-dom.js:10592:27\nbeginWork@resource://devtools/client/shared/vendor/react-dom.js:11419:16\nperformUnitOfWork@resource://devtools/client/shared/vendor/react-dom.js:14702:12\nworkLoop@resource://devtools/client/shared/vendor/react-dom.js:14720:24\nrenderRoot@resource://devtools/client/shared/vendor/react-dom.js:14803:15\nperformWorkOnRoot@resource://devtools/client/shared/vendor/react-dom.js:15655:17\nperformWork@resource://devtools/client/shared/vendor/react-dom.js:15567:24\nperformSyncWork@resource://devtools/client/shared/vendor/react-dom.js:15541:14\nrequestWork@resource://devtools/client/shared/vendor/react-dom.js:15410:5\nscheduleWork@resource://devtools/client/shared/vendor/react-dom.js:15224:16\nenqueueSetState@resource://devtools/client/shared/vendor/react-dom.js:8192:17\nComponent.prototype.setState@resource://devtools/client/shared/vendor/react.js:328:16\nsetCurrentToolId@resource://devtools/client/framework/components/ToolboxController.js:118:10\nset currentToolId@resource://devtools/client/framework/toolbox.js:433:20\nselectTool@resource://devtools/client/framework/toolbox.js:2636:5\n_onPausedState@resource://devtools/client/framework/toolbox.js:663:12\n_onTargetAvailable/<@resource://devtools/client/framework/toolbox.js:705:14\n_emit@resource://devtools/shared/event-emitter.js:226:34\nemit@resource://devtools/shared/event-emitter.js:172:18\nemit@resource://devtools/shared/event-emitter.js:324:18\nonPacket@resource://devtools/shared/protocol/Front.js:332:13\nonPacket@resource://devtools/client/devtools-client.js:492:13\nsend/<@resource://devtools/shared/transport/local-transport.js:68:25\nexports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22\nexports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22\n", "resource://devtools/shared/protocol/Front.js", 99))
+console.warn: "Async method failed in safeAsyncMethod" (new TypeError("this.parentFront is null", "resource://devtools/client/fronts/node.js", 418))
+console.warn: "Async method failed in safeAsyncMethod" (new TypeError("this.parentFront is null", "resource://devtools/client/fronts/node.js", 418))
+console.warn: "Async method failed in safeAsyncMethod" (new TypeError("this.parentFront is null", "resource://devtools/client/fronts/node.js", 418))
+console.warn: "Async method failed in safeAsyncMethod" (new TypeError("this.parentFront is null", "resource://devtools/client/fronts/node.js", 418))
+console.warn: "Async method failed in safeAsyncMethod" (new TypeError("this.parentFront is null", "resource://devtools/client/fronts/node.js", 418))
+console.warn: "Async method failed in safeAsyncMethod" (new TypeError("this.parentFront is null", "resource://devtools/client/fronts/node.js", 418))
+console.warn: "Async method failed in safeAsyncMethod" (new TypeError("this.parentFront is null", "resource://devtools/client/fronts/node.js", 418))
+console.warn: "Async method failed in safeAsyncMethod" (new TypeError("this.parentFront is null", "resource://devtools/client/fronts/node.js", 418))
+console.warn: "Async method failed in safeAsyncMethod" (new TypeError("this.parentFront is null", "resource://devtools/client/fronts/node.js", 418))
+console.warn: "Async method failed in safeAsyncMethod" (new TypeError("this.parentFront is null", "resource://devtools/client/fronts/node.js", 418))
+console.warn: "Async method failed in safeAsyncMethod" (new TypeError("this.parentFront is null", "resource://devtools/client/fronts/node.js", 418))
+console.warn: "Async method failed in safeAsyncMethod" (new TypeError("this.parentFront is null", "resource://devtools/client/fronts/node.js", 418))
+JavaScript warning: resource://devtools/server/actors/inspector/event-collector.js, line 530: debuggee 'https://cdn-static.egybest.net/static/global/js/jquery-3.3.1.min.js:2' would run
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1610634872657	Marionette	INFO	Stopped listening on port 39767
+1610634917218	geckodriver	INFO	Listening on 127.0.0.1:34607
+1610634917226	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilect8dAW"
+
+(firefox:98438): Gtk-WARNING **: 16:35:17.345: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:98720): Gtk-WARNING **: 16:35:19.155: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:98745): Gtk-WARNING **: 16:35:19.431: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:98836): Gtk-WARNING **: 16:35:21.262: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+1610634921404	Marionette	INFO	Listening on port 33741
+1610634921481	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://i.alicdn.com/ams-static/3.0.0/global/base.js, line 9: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ams-static/3.0.0/global/base.js, line 9: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-ams-ui/1.1.1/widget/list/model.js, line 4: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-ams-ui/1.1.1/widget/list/model.js, line 4: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-channel-ui/2.0.0/material-private/crowd-meeting/index.js, line 4: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-channel-ui/2.0.0/material-private/crowd-meeting/index.js, line 4: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-header/20190108161825/buyer/front/ae-header.js, line 4: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-header/20190108161825/buyer/front/ae-header.js, line 4: unreachable code after return statement
+JavaScript warning: https://assets.alicdn.com/g/secdev/sufei_data/3.9.1/index.js, line 1: WebGL context was lost.
+JavaScript warning: https://assets.alicdn.com/g??xlly/spl/rp.js,secdev/nsv/1.0.78/ns_e_88_3_n.js, line 5: WebGL context was lost.
+JavaScript warning: https://g.alicdn.com/AWSC/et/1.62.1/et_n.js, line 4: WebGL context was lost.
+1610634943942	Marionette	INFO	Stopped listening on port 33741
+1610634964655	geckodriver	INFO	Listening on 127.0.0.1:41949
+1610634964664	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilelGMTSH"
+
+(firefox:99018): Gtk-WARNING **: 16:36:04.744: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:99299): Gtk-WARNING **: 16:36:06.180: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:99324): Gtk-WARNING **: 16:36:06.449: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:99415): Gtk-WARNING **: 16:36:08.242: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+1610634968377	Marionette	INFO	Listening on port 46115
+1610634968512	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://i.alicdn.com/ams-static/3.0.0/global/base.js, line 9: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ams-static/3.0.0/global/base.js, line 9: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-ams-ui/1.1.1/widget/list/model.js, line 4: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-ams-ui/1.1.1/widget/list/model.js, line 4: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-channel-ui/2.0.0/material-private/crowd-meeting/index.js, line 4: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-channel-ui/2.0.0/material-private/crowd-meeting/index.js, line 4: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-header/20190108161825/buyer/front/ae-header.js, line 4: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-header/20190108161825/buyer/front/ae-header.js, line 4: unreachable code after return statement
+JavaScript warning: https://assets.alicdn.com/g/secdev/sufei_data/3.9.1/index.js, line 1: WebGL context was lost.
+JavaScript warning: https://assets.alicdn.com/g??xlly/spl/rp.js,secdev/nsv/1.0.78/ns_e_88_3_n.js, line 5: WebGL context was lost.
+JavaScript warning: https://g.alicdn.com/AWSC/et/1.62.1/et_n.js, line 4: WebGL context was lost.
+1610634984129	Marionette	INFO	Stopped listening on port 46115
+1610635146154	geckodriver	INFO	Listening on 127.0.0.1:59677
+1610635146164	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileJobafi"
+
+(firefox:99775): Gtk-WARNING **: 16:39:06.285: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:100055): Gtk-WARNING **: 16:39:07.808: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:100080): Gtk-WARNING **: 16:39:08.060: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:100184): Gtk-WARNING **: 16:39:09.799: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+1610635149983	Marionette	INFO	Listening on port 41501
+1610635150112	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://i.alicdn.com/ams-static/3.0.0/global/base.js, line 9: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ams-static/3.0.0/global/base.js, line 9: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-ams-ui/1.1.1/widget/list/model.js, line 4: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-ams-ui/1.1.1/widget/list/model.js, line 4: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-channel-ui/2.0.0/material-private/crowd-meeting/index.js, line 4: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-channel-ui/2.0.0/material-private/crowd-meeting/index.js, line 4: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-header/20190108161825/buyer/front/ae-header.js, line 4: unreachable code after return statement
+JavaScript warning: https://i.alicdn.com/ae-header/20190108161825/buyer/front/ae-header.js, line 4: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1610635168475	Marionette	INFO	Stopped listening on port 41501
+1610639373915	geckodriver	INFO	Listening on 127.0.0.1:46407
+1610639373921	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilel7sSYJ"
+
+(firefox:103986): Gtk-WARNING **: 17:49:34.033: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:104285): Gtk-WARNING **: 17:49:35.869: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:104310): Gtk-WARNING **: 17:49:36.127: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:104394): Gtk-WARNING **: 17:49:37.811: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+1610639378038	Marionette	INFO	Listening on port 32885
+1610639378094	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-58Z37MT, line 6868: NS_ERROR_NOT_INITIALIZED: 
+1610639400958	Marionette	INFO	Stopped listening on port 32885
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1610639504999	geckodriver	INFO	Listening on 127.0.0.1:40403
+1610639505005	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileJoZkf8"
+
+(firefox:104622): Gtk-WARNING **: 17:51:45.105: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:104908): Gtk-WARNING **: 17:51:46.769: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:104933): Gtk-WARNING **: 17:51:47.023: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:105025): Gtk-WARNING **: 17:51:48.804: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+1610639508947	Marionette	INFO	Listening on port 45763
+1610639509054	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:105134): Gtk-WARNING **: 17:52:11.542: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+1610639534367	Marionette	INFO	Stopped listening on port 45763
+1610639645118	geckodriver	INFO	Listening on 127.0.0.1:56895
+1610639645125	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileStiYmP"
+
+(firefox:105327): Gtk-WARNING **: 17:54:05.232: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:105591): Gtk-WARNING **: 17:54:06.926: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:105616): Gtk-WARNING **: 17:54:07.227: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:105704): Gtk-WARNING **: 17:54:09.111: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+1610639649294	Marionette	INFO	Listening on port 44059
+1610639649395	Marionette	WARN	TLS certificate errors will be ignored for this session
+1610639679275	Marionette	INFO	Stopped listening on port 44059
+1610639682523	geckodriver	INFO	Listening on 127.0.0.1:46725
+1610639682531	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiledc2sPe"
+
+(firefox:105866): Gtk-WARNING **: 17:54:42.640: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:106150): Gtk-WARNING **: 17:54:44.368: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:106176): Gtk-WARNING **: 17:54:44.639: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:106259): Gtk-WARNING **: 17:54:46.324: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+1610639686566	Marionette	INFO	Listening on port 33741
+1610639686686	Marionette	WARN	TLS certificate errors will be ignored for this session
+1610639720976	Marionette	INFO	Stopped listening on port 33741
+1610639842018	geckodriver	INFO	Listening on 127.0.0.1:41997
+1610639842024	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile67XxHg"
+
+(firefox:106543): Gtk-WARNING **: 17:57:22.137: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:106828): Gtk-WARNING **: 17:57:23.873: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:106853): Gtk-WARNING **: 17:57:24.131: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:106946): Gtk-WARNING **: 17:57:26.174: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+1610639846417	Marionette	INFO	Listening on port 46369
+1610639846482	Marionette	WARN	TLS certificate errors will be ignored for this session
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1610639881243	Marionette	INFO	Stopped listening on port 46369
+1610640015434	geckodriver	INFO	Listening on 127.0.0.1:47529
+1610640015442	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileQxC7kj"
+
+(firefox:107201): Gtk-WARNING **: 18:00:15.543: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:107479): Gtk-WARNING **: 18:00:17.142: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:107504): Gtk-WARNING **: 18:00:17.402: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:107597): Gtk-WARNING **: 18:00:19.423: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+1610640019569	Marionette	INFO	Listening on port 44751
+1610640019697	Marionette	WARN	TLS certificate errors will be ignored for this session
+1610640040332	Marionette	INFO	Stopped listening on port 44751
+1610640244208	geckodriver	INFO	Listening on 127.0.0.1:41433
+1610640244215	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileBRoOW3"
+
+(firefox:107902): Gtk-WARNING **: 18:04:04.309: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:108187): Gtk-WARNING **: 18:04:05.938: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:108212): Gtk-WARNING **: 18:04:06.200: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:108303): Gtk-WARNING **: 18:04:08.039: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+1610640248167	Marionette	INFO	Listening on port 40627
+1610640248268	Marionette	WARN	TLS certificate errors will be ignored for this session
+1610640254106	Marionette	INFO	Stopped listening on port 40627
+1610640305583	geckodriver	INFO	Listening on 127.0.0.1:52819
+1610640305589	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileVM8WxO"
+
+(firefox:108433): Gtk-WARNING **: 18:05:05.671: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:108698): Gtk-WARNING **: 18:05:07.124: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:108723): Gtk-WARNING **: 18:05:07.371: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:108813): Gtk-WARNING **: 18:05:09.164: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+1610640309310	Marionette	INFO	Listening on port 43025
+1610640309435	Marionette	WARN	TLS certificate errors will be ignored for this session
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1610640330047	Marionette	INFO	Stopped listening on port 43025
+1610640410443	geckodriver	INFO	Listening on 127.0.0.1:56451
+1610640410449	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileNndXXA"
+
+(firefox:109090): Gtk-WARNING **: 18:06:50.557: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:109381): Gtk-WARNING **: 18:06:52.303: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:109406): Gtk-WARNING **: 18:06:52.564: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:109495): Gtk-WARNING **: 18:06:54.386: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+1610640414489	Marionette	INFO	Listening on port 36515
+1610640414602	Marionette	WARN	TLS certificate errors will be ignored for this session
+1610640464178	geckodriver	INFO	Listening on 127.0.0.1:33451
+1610640464184	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile9qFLwB"
+
+(firefox:109651): Gtk-WARNING **: 18:07:44.269: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:109907): Gtk-WARNING **: 18:07:45.878: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:109945): Gtk-WARNING **: 18:07:46.206: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+1610640466380	Marionette	INFO	Stopped listening on port 36515
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:110044): Gtk-WARNING **: 18:07:48.100: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+1610640468336	Marionette	INFO	Listening on port 38951
+1610640468433	Marionette	WARN	TLS certificate errors will be ignored for this session
+1610640515895	Marionette	INFO	Stopped listening on port 38951
+1610640518019	geckodriver	INFO	Listening on 127.0.0.1:34645
+1610640518027	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileEqrgHV"
+
+(firefox:110244): Gtk-WARNING **: 18:08:38.143: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:110534): Gtk-WARNING **: 18:08:39.691: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:110560): Gtk-WARNING **: 18:08:39.949: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:110650): Gtk-WARNING **: 18:08:41.780: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+1610640521897	Marionette	INFO	Listening on port 35897
+1610640521978	Marionette	WARN	TLS certificate errors will be ignored for this session
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1610640562243	Marionette	INFO	Stopped listening on port 35897
+1610640573235	geckodriver	INFO	Listening on 127.0.0.1:53441
+1610640573241	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileeuo6j0"
+
+(firefox:110824): Gtk-WARNING **: 18:09:33.338: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:111114): Gtk-WARNING **: 18:09:34.973: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:111139): Gtk-WARNING **: 18:09:35.228: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:111232): Gtk-WARNING **: 18:09:37.047: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+1610640577193	Marionette	INFO	Listening on port 38579
+1610640577303	Marionette	WARN	TLS certificate errors will be ignored for this session
+1610640581415	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1610640607807	Marionette	INFO	Stopped listening on port 38579
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1610640643998	geckodriver	INFO	Listening on 127.0.0.1:36669
+1610640644003	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileHe92y0"
+
+(firefox:111422): Gtk-WARNING **: 18:10:44.104: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:111696): Gtk-WARNING **: 18:10:45.727: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:111726): Gtk-WARNING **: 18:10:45.981: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:111817): Gtk-WARNING **: 18:10:47.789: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+1610640647947	Marionette	INFO	Listening on port 34437
+1610640648062	Marionette	WARN	TLS certificate errors will be ignored for this session
+1610640652645	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1610640691550	Marionette	INFO	Stopped listening on port 34437
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1610644028212	geckodriver	INFO	Listening on 127.0.0.1:36455
+1610644028217	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile1vTgVA"
+
+(firefox:116033): Gtk-WARNING **: 19:07:08.294: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:116286): Gtk-WARNING **: 19:07:09.722: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:116311): Gtk-WARNING **: 19:07:09.984: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:116406): Gtk-WARNING **: 19:07:11.771: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+1610644031910	Marionette	INFO	Listening on port 38435
+1610644031974	Marionette	WARN	TLS certificate errors will be ignored for this session
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1610644049010	Marionette	INFO	Stopped listening on port 38435
+1610644095885	geckodriver	INFO	Listening on 127.0.0.1:60073
+1610644095891	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileEtG7OL"
+
+(firefox:116594): Gtk-WARNING **: 19:08:15.976: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:116845): Gtk-WARNING **: 19:08:17.390: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:116870): Gtk-WARNING **: 19:08:17.652: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:116963): Gtk-WARNING **: 19:08:19.454: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+1610644099623	Marionette	INFO	Listening on port 33647
+1610644099740	Marionette	WARN	TLS certificate errors will be ignored for this session
+1610644117683	Marionette	INFO	Stopped listening on port 33647
+1610644126186	geckodriver	INFO	Listening on 127.0.0.1:57257
+1610644126190	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileQwuPfn"
+
+(firefox:117155): Gtk-WARNING **: 19:08:46.264: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:117404): Gtk-WARNING **: 19:08:47.686: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:117429): Gtk-WARNING **: 19:08:47.940: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:117520): Gtk-WARNING **: 19:08:49.712: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+1610644129900	Marionette	INFO	Listening on port 41795
+1610644129953	Marionette	WARN	TLS certificate errors will be ignored for this session
+1610644159719	Marionette	INFO	Stopped listening on port 41795
+1610644243218	geckodriver	INFO	Listening on 127.0.0.1:58195
+1610644243224	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileYH95SS"
+
+(firefox:117713): Gtk-WARNING **: 19:10:43.312: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:117960): Gtk-WARNING **: 19:10:44.719: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:117985): Gtk-WARNING **: 19:10:44.984: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:118077): Gtk-WARNING **: 19:10:46.804: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+1610644246920	Marionette	INFO	Listening on port 36519
+1610644246980	Marionette	WARN	TLS certificate errors will be ignored for this session
+1610644277776	Marionette	INFO	Stopped listening on port 36519
+1610644336143	geckodriver	INFO	Listening on 127.0.0.1:52477
+1610644336147	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileGObjVW"
+
+(firefox:118280): Gtk-WARNING **: 19:12:16.229: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:118532): Gtk-WARNING **: 19:12:17.697: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:118557): Gtk-WARNING **: 19:12:17.956: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:118648): Gtk-WARNING **: 19:12:19.622: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+1610644339758	Marionette	INFO	Listening on port 39691
+1610644339818	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://activity-stream/lib/ASRouter.jsm, line 987: NS_ERROR_ILLEGAL_VALUE: Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIObserverService.removeObserver]
+1610644387628	Marionette	INFO	Stopped listening on port 39691
+1610644415455	geckodriver	INFO	Listening on 127.0.0.1:55031
+1610644415460	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile6XrZTw"
+
+(firefox:118874): Gtk-WARNING **: 19:13:35.544: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:119115): Gtk-WARNING **: 19:13:36.953: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:119140): Gtk-WARNING **: 19:13:37.216: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:119231): Gtk-WARNING **: 19:13:38.984: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+1610644419209	Marionette	INFO	Listening on port 37391
+1610644419311	Marionette	WARN	TLS certificate errors will be ignored for this session
+1610644423216	Marionette	INFO	Stopped listening on port 37391
+1610644437326	geckodriver	INFO	Listening on 127.0.0.1:44717
+1610644437332	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilejdz9Al"
+
+(firefox:119324): Gtk-WARNING **: 19:13:57.413: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:119573): Gtk-WARNING **: 19:13:58.866: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:119598): Gtk-WARNING **: 19:13:59.121: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:119687): Gtk-WARNING **: 19:14:01.060: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+1610644441246	Marionette	INFO	Listening on port 46031
+1610644441382	Marionette	WARN	TLS certificate errors will be ignored for this session
+1610644511190	Marionette	INFO	Stopped listening on port 46031
+1610644514577	geckodriver	INFO	Listening on 127.0.0.1:38183
+1610644514583	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileFv14ye"
+
+(firefox:119894): Gtk-WARNING **: 19:15:14.656: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:120152): Gtk-WARNING **: 19:15:16.072: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:120183): Gtk-WARNING **: 19:15:16.345: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:120277): Gtk-WARNING **: 19:15:18.139: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+1610644518286	Marionette	INFO	Listening on port 44409
+1610644518345	Marionette	WARN	TLS certificate errors will be ignored for this session
+1610644574129	Marionette	INFO	Stopped listening on port 44409
+1610644641642	geckodriver	INFO	Listening on 127.0.0.1:47649
+1610644641646	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileFHIeRq"
+
+(firefox:120567): Gtk-WARNING **: 19:17:21.727: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:120824): Gtk-WARNING **: 19:17:23.138: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:120849): Gtk-WARNING **: 19:17:23.397: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:120941): Gtk-WARNING **: 19:17:25.203: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+1610644645376	Marionette	INFO	Listening on port 36373
+1610644645495	Marionette	WARN	TLS certificate errors will be ignored for this session
+1610644661050	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+
+(/usr/lib/firefox/firefox:121102): Gtk-WARNING **: 19:18:14.872: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:121143): Gtk-WARNING **: 19:18:16.041: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+1610644705021	Marionette	INFO	Stopped listening on port 36373
+1610645325980	geckodriver	INFO	Listening on 127.0.0.1:38655
+1610645325986	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilegqz6xK"
+
+(firefox:121491): Gtk-WARNING **: 19:28:46.060: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:121733): Gtk-WARNING **: 19:28:47.451: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:121758): Gtk-WARNING **: 19:28:47.748: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:121849): Gtk-WARNING **: 19:28:49.571: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+1610645329704	Marionette	INFO	Listening on port 38489
+1610645329837	Marionette	WARN	TLS certificate errors will be ignored for this session
+1610645344681	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1610645345440	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1610645568942	Marionette	INFO	Stopped listening on port 38489
+1610645687018	geckodriver	INFO	Listening on 127.0.0.1:57913
+1610645687023	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilelIzYNa"
+
+(firefox:122385): Gtk-WARNING **: 19:34:47.103: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:122637): Gtk-WARNING **: 19:34:48.550: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:122662): Gtk-WARNING **: 19:34:48.816: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:122754): Gtk-WARNING **: 19:34:50.612: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+1610645690725	Marionette	INFO	Listening on port 42139
+1610645690792	Marionette	WARN	TLS certificate errors will be ignored for this session
+1610645706485	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1610645721234	Marionette	INFO	Stopped listening on port 42139
+1610645776785	geckodriver	INFO	Listening on 127.0.0.1:52277
+1610645776792	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileis0GQ7"
+
+(firefox:123174): Gtk-WARNING **: 19:36:16.872: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:123451): Gtk-WARNING **: 19:36:18.353: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:123476): Gtk-WARNING **: 19:36:18.619: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:123568): Gtk-WARNING **: 19:36:20.449: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+1610645780680	Marionette	INFO	Listening on port 36943
+1610645780748	Marionette	WARN	TLS certificate errors will be ignored for this session
+1610645806733	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1610645828504	Marionette	INFO	Stopped listening on port 36943
+1610645849725	geckodriver	INFO	Listening on 127.0.0.1:48199
+1610645849731	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileag6P9N"
+
+(firefox:123815): Gtk-WARNING **: 19:37:29.833: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:124100): Gtk-WARNING **: 19:37:31.371: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:124125): Gtk-WARNING **: 19:37:31.645: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:124219): Gtk-WARNING **: 19:37:33.480: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+1610645853570	Marionette	INFO	Listening on port 38261
+1610645853682	Marionette	WARN	TLS certificate errors will be ignored for this session
+1610645869093	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1610645885351	Marionette	INFO	Stopped listening on port 38261
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1610645903743	geckodriver	INFO	Listening on 127.0.0.1:56539
+1610645903749	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileZOYIdu"
+
+(firefox:124404): Gtk-WARNING **: 19:38:23.833: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:124687): Gtk-WARNING **: 19:38:25.272: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+
+(/usr/lib/firefox/firefox:124715): Gtk-WARNING **: 19:38:25.558: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:124803): Gtk-WARNING **: 19:38:27.380: Theme parsing error: gtk.css:2:33: Failed to import: Error opening file /home/none/.config/gtk-3.0/window_decorations.css: No such file or directory
+1610645907495	Marionette	INFO	Listening on port 40987
+1610645907611	Marionette	WARN	TLS certificate errors will be ignored for this session
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1610645934383	Marionette	INFO	Stopped listening on port 40987
