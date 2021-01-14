@@ -43,10 +43,6 @@ class Egydownloader:
                 self.driver.close()
 
         self.driver.switch_to.window(self.driver.window_handles[0])
-
-        #  for i in reversed(range(1, len(self.chrome_driver.window_handles))):
-        #     self.chrome_driver.switch_to.window(self.chrome_driver.window_handles[i])
-        #     self.chrome_driver.close()
         
     
     def display_info(self):
@@ -68,5 +64,5 @@ down.get_link()
 down.bypass_egybest_popup()
 down.terminate_popup()
 down.get_heighest()
-#down.get_heighest()
+
 
