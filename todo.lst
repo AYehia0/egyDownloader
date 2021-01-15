@@ -1,0 +1,39 @@
+#ONLY FOR DOWNLOADING 1 LINK
+
+1) Initialize the needed var in the constroctor : 
+    -movie_url: "https://beta.egybest.direct/movie/tenet-2020/"
+    -quality_type: 1080p, 720p, 360p, 480p, 240p
+    -available_qualities_to_choose_from: by scraping the watch_dl table
+    -final_download_link: "vidstream.io/blahblah"
+
+2) Initialize the firefox driver
+    -check for driver existance
+    -driver:
+    -path_to_driver:
+    -wait_for_element:
+    -max_time_to_wait:
+
+    later on :
+    "--headless"
+
+3) Close the driver after finishing
+    -check if it's closed of not 
+    -close
+
+4) Open the movie_url :
+    -using the selenium driver.get
+    -check for connectivity 
+
+5) Click to activate the popups shit
+    -click 
+    -wait some time to fully load the popups
+    -close the popups
+
+6) Close the popups
+    -window_handles
+    -check for other popups(the is the most chanllenging shit here)
+
+7) Get the download LINK
+    -click on the wanted quality_type
+    -check if the open page isn't as the home page(sometimes clicking the link opens the same page, or activate a popup)
+    -close the home page 
