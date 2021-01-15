@@ -9,7 +9,7 @@ class Scrapper:
         self.qualities_sizies = []
 
         self.soup = self.init_soup()
-        self.list_all_info()
+        #self.list_all_info()
 
     def init_soup(self):
         self.r_url = requests.get(self.srcape_url).text
@@ -27,7 +27,6 @@ class Scrapper:
                     self.qualities_sizies.append(td.text)
                 if x is not None:
                     self.qualities_sizies.append(x.get('data-url'))
-        
                 
 
 
