@@ -128,3 +128,5 @@ dmypy.json
 # Pyre type checker
 .pyre/
 geckodriver.log
+__pycache__/scrapper.cpython-38.pyc
+__pycache__/scrapper.cpython-38.pyc
