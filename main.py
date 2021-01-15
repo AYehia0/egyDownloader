@@ -22,6 +22,14 @@ class Egydownloader:
         self.sc = Scrapper(self.download_url)
         return self.sc.qualities_sizies
 
+
+    def get_download_button(self, url):
+        self.sc = Scrapper(url)
+    
+        self.sc.vidstram_link()
+        
+
+
     def get_link(self):
         try:
             #tring to open the page
@@ -35,8 +43,8 @@ class Egydownloader:
     #index_to_terminate 0: for first, 1 for second
     def terminate_popup(self, index_to_terminate=0):
 
-        for handle in self.driver.window_handles:
-            self.driver.switch_to.window(handle)
+        for _ in self.driver.window_handles:
+            #self.driver.switch_to.window(handle)
 
             #closing all tabs expect the one which has the url
             if self.driver.current_url != self.download_url:
@@ -45,6 +53,15 @@ class Egydownloader:
 
         self.driver.switch_to.window(self.driver.window_handles[index_to_terminate])
         
+    def close_home(self, index=0):
+        #print(len(self.driver.window_handles))
+        for i in reversed(range(1, len(self.driver.window_handles))):
+            self.driver.switch_to.window(self.driver.window_handles[i])
+            #print(self.driver.current_url)
+            if "vidstream" not in self.driver.current_url:
+                self.driver.close() 
+        self.driver.switch_to.window(self.driver.window_handles[index])
+
     #prints the contents of the table
     def display_info(self):
         info = self.get_table_info()
@@ -65,19 +82,27 @@ class Egydownloader:
 
         try:
             self.click_somewhere()
-            time.sleep(5)
+            time.sleep(2)
             if len(self.driver.window_handles) > 1:
                 #there is a popup
-                print(f"a pop up is there : {len(self.driver.window_handles)} opened tabs")
-                self.terminate_popup(0)
-                time.sleep(3)
+                #print(f"a pop up is there : {len(self.driver.window_handles)} opened tabs")
+                self.close_home()
+                time.sleep(2)
 
         except :
             print("nothing")
             self.get_download_quality(1)
-            #close the movie page
-            self.terminate_popup(0)
+            
+    def get_page_tabs(self, name):
+        for i in reversed(range(1, len(self.driver.window_handles))):
+            self.driver.switch_to.window(self.driver.window_handles[i])
+            print(self.driver.current_url)
+            if name in self.driver.current_url:
+                self.driver.switch_to.window(self.driver.window_handles[i])
 
+    def vidstream(self):
+        target = self.driver.find_element_by_xpath('/html/body/div[1]/div/p/a[1]').get_attribute('href')
+        return target
 
     def work(self):
         #self.display_info()
@@ -86,7 +111,22 @@ class Egydownloader:
         self.check_for_popups()
 
         self.get_download_quality(1)
+        time.sleep(2)
+        
+        #switch to the vidstream page
+        self.get_page_tabs('vidstream')
 
+        time.sleep(3)
+        self.driver.find_element_by_class_name('bigbutton').click()
+        self.get_page_tabs('vidstream')
+
+        time.sleep(5)
+        #the link ,woah
+        print(self.vidstream())
+
+
+    
+        
 
 
 down = Egydownloader('https://beta.egybest.direct/movie/tenet-2020/')
