@@ -6,10 +6,7 @@ class Scrapper:
     
     def __init__(self, url):
         self.srcape_url = url
-        self.qualities_sizies = []
-
         self.soup = self.init_soup()
-        #self.list_all_info()
 
     def init_soup(self):
         self.r_url = requests.get(self.srcape_url).text
@@ -18,16 +15,23 @@ class Scrapper:
         return self.soup
 
     #gets type, quality and size of a movie
-    def list_all_info(self):
+    def get_movie_details(self):
+        qualities_sizies = list()
+        api_links = list()
         download_table = self.soup.find(class_='dls_table btns full mgb').tbody.find_all('tr')
-        for i in range(5):
-            for td in download_table[i].find_all('td'):
-                x = td.find('a', class_="nop btn g dl _open_window")
-                if td.text != " تحميل  مشاهدة ":
-                    self.qualities_sizies.append(td.text)
-                if x is not None:
-                    self.qualities_sizies.append(x.get('data-url'))
-                
+
+        #5 is the number of all possible qualities, there is a better way to do it but i want to sleep now 
+        try:
+            for i in range(5):
+                for td in download_table[i].find_all('td'):
+                    x = td.find('a', class_="nop btn g dl _open_window")
+                    if td.text != " تحميل  مشاهدة ":
+                        qualities_sizies.append(td.text)
+                    if x is not None:
+                        api_links.append(x.get('data-url'))
+        except Exception as e:
+            print("Wrong page or still loading : " + e)
+        return qualities_sizies, api_links               
 
 
 

@@ -19,8 +19,12 @@ class Egydownloader:
         self.wait = WebDriverWait(self.driver, self.max_wait_time)
   
     def get_table_info(self):
-        self.sc = Scrapper(self.download_url)
-        return self.sc.qualities_sizies
+        try:
+            self.sc = Scrapper(self.download_url)
+            details_movie = self.sc.get_movie_details()
+        except Exception as e:
+            print("Error initializing the Scrapper: " + e)
+        return details_movie
 
 
     def get_download_button(self, url):
@@ -61,7 +65,7 @@ class Egydownloader:
 
     #prints the contents of the table
     def display_info(self):
-        info = self.get_table_info()
+        info, apis = self.get_table_info()
         #printing qualities
         for i in range(0, len(info), 3):
             print(*info[i:i+3], sep=' | ')
@@ -69,8 +73,10 @@ class Egydownloader:
     def get_download_quality(self, index):
         #self.driver.get(self.init_url + self.sc.qualities_sizies[3])
         #time.sleep(3)
-        self.wait.until(EC.visibility_of_element_located((By.XPATH, f'//*[@id="watch_dl"]/table/tbody/tr[{index}]/td[4]/a[1]' ))).click()
-            
+        try:
+            self.wait.until(EC.visibility_of_element_located((By.XPATH, f'//*[@id="watch_dl"]/table/tbody/tr[{index}]/td[4]/a[1]' ))).click()
+        except Exception as e:
+            print("Time out: " + e)       
 
     def check_for_popups(self):
         #it clicks somewhere, where it doesn't redirect
@@ -113,7 +119,7 @@ class Egydownloader:
         except :
             print("already closed")
     def work(self):
-        #self.display_info()
+        self.display_info()
 
         #checking for popups
         self.check_for_popups()
@@ -132,14 +138,14 @@ class Egydownloader:
         #the link ,woah
         print("The Download Link : " + self.vidstream())
         
-        #quitting 
+        # quitting 
         self.driver_quit()
 
     
         
 
 
-down = Egydownloader('https://beta.egybest.direct/movie/tenet-2020/')
+down = Egydownloader('https://beta.egybest.direct/movie/we-can-be-heroes-2020/?ref=movies-p2')
 
 down.work()
 
