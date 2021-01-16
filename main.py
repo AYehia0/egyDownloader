@@ -25,11 +25,8 @@ class Egydownloader:
 
     def get_download_button(self, url):
         self.sc = Scrapper(url)
-    
         self.sc.vidstram_link()
         
-
-
     def get_link(self):
         try:
             #tring to open the page
@@ -71,7 +68,7 @@ class Egydownloader:
 
     def get_download_quality(self, index):
         #self.driver.get(self.init_url + self.sc.qualities_sizies[3])
-        time.sleep(3)
+        #time.sleep(3)
         self.wait.until(EC.visibility_of_element_located((By.XPATH, f'//*[@id="watch_dl"]/table/tbody/tr[{index}]/td[4]/a[1]' ))).click()
             
 
@@ -94,16 +91,27 @@ class Egydownloader:
             self.get_download_quality(1)
             
     def get_page_tabs(self, name):
-        for i in reversed(range(1, len(self.driver.window_handles))):
-            self.driver.switch_to.window(self.driver.window_handles[i])
-            print(self.driver.current_url)
-            if name in self.driver.current_url:
+        try:
+            for i in reversed(range(1, len(self.driver.window_handles))):
                 self.driver.switch_to.window(self.driver.window_handles[i])
+                #print(self.driver.current_url)
+                if name in self.driver.current_url:
+                    self.driver.switch_to.window(self.driver.window_handles[i])
+        except Exception as e:
+            print("failed " + e)
 
     def vidstream(self):
-        target = self.driver.find_element_by_xpath('/html/body/div[1]/div/p/a[1]').get_attribute('href')
+        try:
+            target = self.driver.find_element_by_xpath('/html/body/div[1]/div/p/a[1]').get_attribute('href')
+        except Exception as e:
+            print(e)
         return target
 
+    def driver_quit(self):
+        try:
+            self.driver.quit()
+        except :
+            print("already closed")
     def work(self):
         #self.display_info()
 
@@ -122,8 +130,10 @@ class Egydownloader:
 
         time.sleep(5)
         #the link ,woah
-        print(self.vidstream())
-
+        print("The Download Link : " + self.vidstream())
+        
+        #quitting 
+        self.driver_quit()
 
     
         
