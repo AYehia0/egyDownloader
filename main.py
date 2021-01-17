@@ -57,14 +57,16 @@ class Egydownloader:
         movie_names, movie_ids = self.search_movie()
         #print all the movies
         print("All available movies...")
+        print("----------------")
         for index, movie in enumerate(movie_names, start=1 ):
             print(f"{index} : {movie}")
         
+        print("----------------")
         while True:
             movie_choice = int(input("Choose a movie..."))
             if movie_choice in range(1, len(movie_names)+1):
                 self.download_url = self.base_url + movie_ids[movie_choice-1]
-                print(self.download_url)
+                #print(self.download_url)
                 return
             else:
                 print("Invalid choice")
@@ -122,7 +124,7 @@ class Egydownloader:
 
     #prints the contents of the table
     def display_info(self):
-        self.vid_options, self.vid_api_calls = self.get_table_info()
+        self.vid_options = self.get_table_info()
         
         #printing qualities
         for i in range(0, len(self.vid_options), 3):
@@ -131,10 +133,11 @@ class Egydownloader:
     def get_quality_choice(self):
         choices = int(len(self.vid_options) / 3)
         while True:
-            q = int(input("Please choose a quality to download..."))
+            q = int(input("Please choose a quality to download: "))
 
             if q in range(1, choices+1):
-                print("Please wait...")
+                print("Please wait while fetching the link...")
+                print("----------------")
                 self.quality_index = q 
 
                 return
@@ -230,7 +233,7 @@ class Egydownloader:
 
 # https://beta.egybest.direct/movie/we-can-be-heroes-2020/?ref=movies-p2    
 user_input = input("Movie: ")
-
+print("----------------")
 down = Egydownloader(user_input)
 
 
