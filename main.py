@@ -1,4 +1,6 @@
 import time
+import requests
+import json as js
 from bs4 import BeautifulSoup as bs
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -8,23 +10,75 @@ from scrapper import Scrapper
 
 class Egydownloader:
 
-    def __init__(self, url):
+    def __init__(self, user_input):
         #download_url is the given link from the user
-        self.download_url = url
-        self.init_url = "https://beta.egybest.direct"
+        self.download_url = user_input
+        
+        #self.init_url = "https://beta.egybest.direct/"
         self.driver_path = 'driver/geckodriver'
         self.vid_options = None
         self.vid_api_calls = None
         self.quality_index = None
         self.max_wait_time = 10
+        self.base_url = "https://nero.egybest.site/"
+        self.auto_complete = "autoComplete.php?q="
+        self.driver = None
+        self.wait = None
+        
+        if "https" not in self.download_url:
+            self.search_key = self.download_url
+            self.get_full_url()
 
+
+    #in case of the download url is actually the search key
+    def search_movie(self):
+        search_out_names = []
+        search_out_ids = []
+
+        try:
+            res_txt = js.loads(requests.get(self.base_url  + self.auto_complete + self.search_key).text)
+
+            for i in res_txt[self.search_key]:
+                
+                #Saw V (2008)
+                search_out_names.append(i['t'])
+                
+                #movie/saw-v-2008
+                search_out_ids.append(i['u'])
+
+        except Exception as e:
+            print(e)
+        
+        return search_out_names, search_out_ids
+
+    #get the full url in case of searching 
+    def get_full_url(self):
+
+        movie_names, movie_ids = self.search_movie()
+        #print all the movies
+        print("All available movies...")
+        for index, movie in enumerate(movie_names, start=1 ):
+            print(f"{index} : {movie}")
+        
+        while True:
+            movie_choice = int(input("Choose a movie..."))
+            if movie_choice in range(1, len(movie_names)+1):
+                self.download_url = self.base_url + movie_ids[movie_choice-1]
+                print(self.download_url)
+                return
+            else:
+                print("Invalid choice")
+
+    def init_webdriver(self):
         self.driver = webdriver.Firefox(executable_path=self.driver_path)
         self.wait = WebDriverWait(self.driver, self.max_wait_time)
   
+
     def get_table_info(self):
         try:
             self.sc = Scrapper(self.download_url)
             details_movie = self.sc.get_movie_details()
+
         except Exception as e:
             print("Error initializing the Scrapper: " + e)
         return details_movie
@@ -33,7 +87,7 @@ class Egydownloader:
     def get_download_button(self, url):
         self.sc = Scrapper(url)
         self.sc.vidstram_link()
-        
+
     def get_link(self):
         try:
             #tring to open the page
@@ -69,8 +123,7 @@ class Egydownloader:
     #prints the contents of the table
     def display_info(self):
         self.vid_options, self.vid_api_calls = self.get_table_info()
-
-        print(self.vid_options)
+        
         #printing qualities
         for i in range(0, len(self.vid_options), 3):
             print(*self.vid_options[i:i+3], sep=' | ')
@@ -141,10 +194,17 @@ class Egydownloader:
 
 
     def work(self):
+        
+
+
         self.display_info()
 
         print("----------------")
         self.get_quality_choice()
+
+
+        # starting the webdriver after scraping
+        self.init_webdriver()
 
         #checking for popups
         self.check_for_popups()
@@ -167,10 +227,12 @@ class Egydownloader:
         self.driver_quit()
 
     
-        
 
+# https://beta.egybest.direct/movie/we-can-be-heroes-2020/?ref=movies-p2    
+user_input = input("Movie: ")
 
-down = Egydownloader('https://beta.egybest.direct/movie/we-can-be-heroes-2020/?ref=movies-p2')
+down = Egydownloader(user_input)
+
 
 down.work()
 
