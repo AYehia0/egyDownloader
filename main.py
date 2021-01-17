@@ -13,6 +13,9 @@ class Egydownloader:
         self.download_url = url
         self.init_url = "https://beta.egybest.direct"
         self.driver_path = 'driver/geckodriver'
+        self.vid_options = None
+        self.vid_api_calls = None
+        self.quality_index = None
         self.max_wait_time = 10
 
         self.driver = webdriver.Firefox(executable_path=self.driver_path)
@@ -65,14 +68,31 @@ class Egydownloader:
 
     #prints the contents of the table
     def display_info(self):
-        info, apis = self.get_table_info()
-        #printing qualities
-        for i in range(0, len(info), 3):
-            print(*info[i:i+3], sep=' | ')
+        self.vid_options, self.vid_api_calls = self.get_table_info()
 
-    def get_download_quality(self, index):
+        print(self.vid_options)
+        #printing qualities
+        for i in range(0, len(self.vid_options), 3):
+            print(*self.vid_options[i:i+3], sep=' | ')
+
+    def get_quality_choice(self):
+        choices = int(len(self.vid_options) / 3)
+        while True:
+            q = int(input("Please choose a quality to download..."))
+
+            if q in range(1, choices+1):
+                print("Please wait...")
+                self.quality_index = q 
+
+                return
+            else:
+                print("Invalid option")
+
+
+    def get_download_quality(self):
         #self.driver.get(self.init_url + self.sc.qualities_sizies[3])
         #time.sleep(3)
+        index = self.quality_index
         try:
             self.wait.until(EC.visibility_of_element_located((By.XPATH, f'//*[@id="watch_dl"]/table/tbody/tr[{index}]/td[4]/a[1]' ))).click()
         except Exception as e:
@@ -94,7 +114,7 @@ class Egydownloader:
 
         except :
             print("nothing")
-            self.get_download_quality(1)
+            self.get_download_quality()
             
     def get_page_tabs(self, name):
         try:
@@ -108,7 +128,7 @@ class Egydownloader:
 
     def vidstream(self):
         try:
-            target = self.driver.find_element_by_xpath('/html/body/div[1]/div/p/a[1]').get_attribute('href')
+            target = self.wait.until(EC.presence_of_element_located((By.XPATH, '/html/body/div[1]/div/p/a[1]'))).get_attribute('href')
         except Exception as e:
             print(e)
         return target
@@ -118,13 +138,18 @@ class Egydownloader:
             self.driver.quit()
         except :
             print("already closed")
+
+
     def work(self):
         self.display_info()
+
+        print("----------------")
+        self.get_quality_choice()
 
         #checking for popups
         self.check_for_popups()
 
-        self.get_download_quality(1)
+        self.get_download_quality()
         time.sleep(2)
         
         #switch to the vidstream page
