@@ -7,6 +7,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from scrapper import Scrapper
+from selenium.webdriver.firefox.options import Options
+
 
 class Egydownloader:
 
@@ -24,10 +26,13 @@ class Egydownloader:
         self.auto_complete = "autoComplete.php?q="
         self.driver = None
         self.wait = None
-        
+        self.debug = True
+
         if "https" not in self.download_url:
             self.search_key = self.download_url
             self.get_full_url()
+
+
 
 
     #in case of the download url is actually the search key
@@ -71,9 +76,18 @@ class Egydownloader:
             else:
                 print("Invalid choice")
 
+
     def init_webdriver(self):
-        self.driver = webdriver.Firefox(executable_path=self.driver_path)
+           
+        if self.debug:
+            options = Options()
+            options.add_argument('--headless')
+            options.add_argument("--disable-gpu")
+
+        self.driver = webdriver.Firefox(options=options, executable_path=self.driver_path)
         self.wait = WebDriverWait(self.driver, self.max_wait_time)
+
+                
   
 
     def get_table_info(self):
@@ -197,14 +211,11 @@ class Egydownloader:
 
 
     def work(self):
-        
-
 
         self.display_info()
 
         print("----------------")
         self.get_quality_choice()
-
 
         # starting the webdriver after scraping
         self.init_webdriver()
