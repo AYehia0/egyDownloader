@@ -23,17 +23,17 @@ class Scrapper:
     #gets type, quality and size of a movie
     def get_movie_details(self):
         qualities_sizies = list()
-        download_table = self.soup.find(class_='dls_table btns full mgb')
-
         #5 is the number of all possible qualities, there is a better way to do it but i want to sleep now 
         try:
-            for tr in download_table.find_all('tr')[1:]:
-                tds = tr.find_all('td')
-                for td in tds[:3]:
-                    qualities_sizies.append(td.text)
-
+            download_table = self.soup.find(class_='dls_table btns full mgb')
+            if download_table is not None:
+                for tr in download_table.find_all('tr')[1:]:
+                    tds = tr.find_all('td')
+                    for td in tds[:3]:
+                        qualities_sizies.append(td.text)
         except Exception as e:
-            print("Wrong page or still loading : " + e)
+            print("Wrong page or movie isn't available for download: " + e)
+            return None
         return qualities_sizies              
 
     #searching using the autocomplete
