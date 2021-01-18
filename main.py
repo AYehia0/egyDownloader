@@ -27,13 +27,11 @@ class Egydownloader:
         self.driver = None
         self.wait = None
         self.debug = True
+        self.success = True  #flag to check if everything is OK before init the webdriver
 
         if "https" not in self.download_url:
             self.search_key = self.download_url
             self.get_full_url()
-
-
-
 
     #in case of the download url is actually the search key
     def search_movie(self):
@@ -61,6 +59,10 @@ class Egydownloader:
 
         movie_names, movie_ids = self.search_movie()
         #print all the movies
+        if len(movie_names) == 0:
+            print("No such movie :( ")
+            self.download_url = None
+            return 
         print("All available movies...")
         print("----------------")
         for index, movie in enumerate(movie_names, start=1 ):
@@ -68,36 +70,40 @@ class Egydownloader:
         
         print("----------------")
         while True:
-            movie_choice = int(input("Choose a movie..."))
-            if movie_choice in range(1, len(movie_names)+1):
-                self.download_url = self.base_url + movie_ids[movie_choice-1]
-                #print(self.download_url)
-                return
-            else:
-                print("Invalid choice")
-
+            try:
+                movie_choice = int(input("Choose a movie: "))
+                if movie_choice in range(1, len(movie_names)+1):
+                    self.download_url = self.base_url + movie_ids[movie_choice-1]
+                    #print(self.download_url)
+                    return
+                else:
+                    print("Invalid choice")
+            except ValueError:
+                print("Please write a number")
 
     def init_webdriver(self):
            
-        if self.debug:
+        if not self.debug:
             options = Options()
             options.add_argument('--headless')
             options.add_argument("--disable-gpu")
 
+        options = Options()
         self.driver = webdriver.Firefox(options=options, executable_path=self.driver_path)
         self.wait = WebDriverWait(self.driver, self.max_wait_time)
-
-                
-  
-
+ 
     def get_table_info(self):
+        details_movie = None
         try:
-            self.sc = Scrapper(self.download_url)
-            details_movie = self.sc.get_movie_details()
+            if self.download_url is not None:
+                self.sc = Scrapper(self.download_url)
+                details_movie = self.sc.get_movie_details()
 
         except Exception as e:
             print("Error initializing the Scrapper: " + e)
-        return details_movie
+        
+        if details_movie is not None:
+            return details_movie 
 
 
     def get_download_button(self, url):
@@ -138,31 +144,50 @@ class Egydownloader:
 
     #prints the contents of the table
     def display_info(self):
-        self.vid_options = self.get_table_info()
-        
-        #printing qualities
-        for i in range(0, len(self.vid_options), 3):
-            print(*self.vid_options[i:i+3], sep=' | ')
+        try:
+            self.vid_options = self.get_table_info()
+            
+            #printing qualities
+            for i in range(0, len(self.vid_options), 3):
+                print(*self.vid_options[i:i+3], sep=' | ')
+        except:
+            print("There is not movie to download")
 
     def get_quality_choice(self):
-        choices = int(len(self.vid_options) / 3)
+        try:
+            all_options = len(self.vid_options)
+        except TypeError:
+            return
+
+        if all_options is None:
+            return
+        choices = int( all_options / 3)
+        if choices == 0:
+            print("You can't download this movie")
+            return None
         while True:
-            q = int(input("Please choose a quality to download: "))
+            try:
+                q = int(input("Please choose a quality to download: "))
 
-            if q in range(1, choices+1):
-                print("Please wait while fetching the link...")
-                print("----------------")
-                self.quality_index = q 
+                if q in range(1, choices+1):
+                    print("Please wait while fetching the link...")
+                    print("----------------")
+                    self.quality_index = q 
 
-                return
-            else:
-                print("Invalid option")
-
+                    return
+                else:
+                    print("Invalid option")
+            except ValueError:
+                print("Choose a number")
 
     def get_download_quality(self):
         #self.driver.get(self.init_url + self.sc.qualities_sizies[3])
         #time.sleep(3)
         index = self.quality_index
+
+        if index is None:
+            self.success = False
+            return
         try:
             self.wait.until(EC.visibility_of_element_located((By.XPATH, f'//*[@id="watch_dl"]/table/tbody/tr[{index}]/td[4]/a[1]' ))).click()
         except Exception as e:
@@ -217,11 +242,15 @@ class Egydownloader:
         print("----------------")
         self.get_quality_choice()
 
+        #checking if the movie is there and everything is alright
+        if not self.success:
+            return
         # starting the webdriver after scraping
         self.init_webdriver()
 
         #checking for popups
         self.check_for_popups()
+
 
         self.get_download_quality()
         time.sleep(2)
