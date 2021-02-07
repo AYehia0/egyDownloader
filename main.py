@@ -74,7 +74,6 @@ class Egydownloader:
                 movie_choice = int(input("Choose a movie: "))
                 if movie_choice in range(1, len(movie_names)+1):
                     self.download_url = self.base_url + movie_ids[movie_choice-1]
-                    #print(self.download_url)
                     return
                 else:
                     print("Invalid choice")

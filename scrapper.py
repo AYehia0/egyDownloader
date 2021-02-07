@@ -16,7 +16,7 @@ class Scrapper:
     def init_soup(self):
 
         self.r_url = requests.get(self.scrape_url).text
-        self.soup = bs(self.r_url, 'lxml')
+        self.soup = bs(self.r_url, 'html.parser')
 
         return self.soup
 
@@ -58,3 +58,6 @@ class Scrapper:
     # }
   
 
+# s = Scrapper('https://nero.egybest.site/movie/saw-iv-2007')
+
+# print(s.get_movie_details())
