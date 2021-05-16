@@ -26,7 +26,7 @@ class Egydownloader:
         self.auto_complete = "autoComplete.php?q="
         self.driver = None
         self.wait = None
-        self.debug = True 
+        self.debug = False
         self.success = True  #flag to check if everything is OK before init the webdriver
 
         if "https" not in self.download_url:
