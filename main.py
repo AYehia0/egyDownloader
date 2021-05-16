@@ -26,7 +26,7 @@ class Egydownloader:
         self.auto_complete = "autoComplete.php?q="
         self.driver = None
         self.wait = None
-        self.debug = True
+        self.debug = True 
         self.success = True  #flag to check if everything is OK before init the webdriver
 
         if "https" not in self.download_url:
@@ -82,12 +82,14 @@ class Egydownloader:
 
     def init_webdriver(self):
            
+        options = Options()
+
         if not self.debug:
+            print("Disabling browser")
             options = Options()
             options.add_argument('--headless')
             options.add_argument("--disable-gpu")
 
-        options = Options()
         self.driver = webdriver.Firefox(options=options, executable_path=self.driver_path)
         self.wait = WebDriverWait(self.driver, self.max_wait_time)
  
@@ -225,7 +227,11 @@ class Egydownloader:
             target = self.wait.until(EC.presence_of_element_located((By.XPATH, '/html/body/div[1]/div/p/a[1]'))).get_attribute('href')
         except Exception as e:
             print(e)
-        return target
+
+        if target is None:
+            return "Error"
+
+        return target 
 
     def driver_quit(self):
         try:
@@ -252,16 +258,16 @@ class Egydownloader:
 
 
         self.get_download_quality()
-        time.sleep(2)
+        time.sleep(4)
         
         #switch to the vidstream page
         self.get_page_tabs('vidstream')
 
-        time.sleep(3)
+        time.sleep(5)
         self.driver.find_element_by_class_name('bigbutton').click()
         self.get_page_tabs('vidstream')
 
-        time.sleep(5)
+        time.sleep(4)
         #the link ,woah
         print("The Download Link : " + self.vidstream())
         
