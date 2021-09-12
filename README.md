@@ -1,4 +1,4 @@
-# egyDownloader
+# egyDownloader [DISCONNECTED]
 Download from egybest without the trashy ads or popups 
 
 
